@@ -1,6 +1,6 @@
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge) 
 
-<h1>Projeto: Site para uma Clínica Odontológica</h1>
+<h1>Projeto: Site para Clínicas Odontológicas</h1>
 
 <h2>📌 Sobre o Projeto</h2>
 <p>Este é um projeto Front-End dedicado a Clínicas Odontológicas sendo possível customizar de acordo com a necessidade, site Front End completo para qualquer Clínica Odontológica. Este site foi criado para fins de estudo e prática da tecnologia React.js. Site com carrosel e informações de contato e endereço.</p>
