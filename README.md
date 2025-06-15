@@ -3,7 +3,7 @@
 <h1>Projeto: Site para uma Clínica Odontológica</h1>
 
 <h2>📌 Sobre o Projeto</h2>
-<p></p>
+<p>Este é um projeto Front-End dedicado a Clínicas Odontológicas sendo possível customizar de acordo com a necessidade, site Front End completo para qualquer Clínica Odontológica. Este site foi criado para fins de estudo e prática da tecnologia React.js. Site com carrosel e informações de contato e endereço.</p>
 
 <h3>💻<a href="https://site-clinica-odontologica-react-2ptturluf-deangelleses-projects.vercel.app/" target="_blank"> Acessar Site do Projeto Aqui</a></h3>
 
