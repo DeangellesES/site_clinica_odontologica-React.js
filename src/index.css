@@ -59,3 +59,9 @@ div:hover.swiper-button-next{
   color: red;
   border-bottom: 1px solid red;
 }
+
+/* AGENDAMENTO */
+.aspas {
+  color: #8f8888;
+  margin-top: 1.4rem;
+}
