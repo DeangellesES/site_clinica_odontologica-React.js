@@ -4,7 +4,7 @@ import Rodape from "../../Components/Rodape"
 import agendando from "../../assets/imagens/agendando.jpg"
 import dentistaBarba from "../../assets/imagens/dentista-paciente-barba.webp"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuoteRight } from "@fortawesome/free-solid-svg-icons"
+import { faQuoteRight, faLocationDot, faClock, faMobileScreen } from "@fortawesome/free-solid-svg-icons"
 
 //GERAL
 const TituloSecundarios = styled.h1`
@@ -91,6 +91,62 @@ const SecaoReserveButton = styled.button`
     color: rgb(83, 37, 43);
 `
 
+// SECAO AGENDAMENTO HORARIOS
+const SecaoAtendimento = styled.section`
+    background-color:rgb(129, 36, 36);
+    padding: .5rem;
+    margin-top: 5rem;
+`
+const SecaoAgendamento = styled.div`
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    justify-content: center;
+    gap: 1.6rem;
+    margin-bottom: 7rem;
+`
+const SecaoAgendamentoCaixaInput = styled.div`
+    display: grid;
+    gap: 1rem;
+`
+const SecaoAgendamentoInput = styled.input`
+    width: 100%;
+    padding: .8rem;
+`
+const SecaoAgendamentoTextArea = styled.textarea`
+    width: 100%;
+    padding: 3rem 0;
+`
+const SecaoAgendamentoAncora = styled.a`
+    text-decoration: none;
+    background-color: rgb(233, 146, 214);
+    width: 35%;
+    color: #000;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+`
+const SecaoAgendamentoCaixaParagrafo = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+`
+const SecaoAgendamentoCaixaParagrafoDentro = styled.div`
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+`
+const SecaoAgendamentoParagrafo = styled.p`
+    font-size: 1.5rem;
+    color: rgb(22, 21, 22);
+    font-weight: 600;
+`
+const SecaoAgendamentoMapa = styled.iframe`
+    width: 100%;
+    heigth: 60%;
+    border: none;
+`   
+
 function Agendamento() {
     return (
         <>
@@ -127,25 +183,37 @@ function Agendamento() {
             {/* FIM SECAO RESERVE CONSULTA*/}
 
             {/* INICIO SECAO HORARIOS ATENDIMENTO*/}
-            <section>
+            <SecaoAtendimento>
                 <TituloSecundarios>Nossos horários de atendimento</TituloSecundarios>
                 <ParagraTituloSecundarios>Estamos prontos para cuidar do seu sorriso</ParagraTituloSecundarios>
-                <div>
+                <SecaoAgendamento>
+                    <SecaoAgendamentoCaixaInput>
+                        <SecaoAgendamentoInput type="text" placeholder="Nome"/>
+                        <SecaoAgendamentoInput type="text" placeholder="Email"/>
+                        <SecaoAgendamentoTextArea name="" id="" ></SecaoAgendamentoTextArea>
+                        <SecaoAgendamentoAncora href="">Enviar</SecaoAgendamentoAncora>
+                    </SecaoAgendamentoCaixaInput>
+
                     <div>
-                        <input type="text" placeholder="Nome"/>
-                        <input type="text" placeholder="Email"/>
-                        <textarea name="" id="" placeholder="Mensagem"></textarea>
+                        <SecaoAgendamentoMapa src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12698.561856681566!2d-122.033602!3d37.27995200000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e4ad38fa6a251%3A0x4462135701bcadcb!2sSaratoga%20Sunnyvale%20Rd%2C%20Saratoga%2C%20CA%2095070!5e0!3m2!1spt-BR!2sus!4v1750715430621!5m2!1spt-BR!2sus" width="600" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></SecaoAgendamentoMapa>
                     </div>
-                    <div>
-                        
-                    </div>
-                    <div>
-                        <p>123 Sunnyvale Rd, San Jose California, United States</p>
-                        <p>Seg-Sex 10 am-5pm, sáb 1 pm-5pm</p>
-                        <p>415-111-2233</p>
-                    </div>
-                </div>
-            </section>
+
+                    <SecaoAgendamentoCaixaParagrafo>
+                        <SecaoAgendamentoCaixaParagrafoDentro>
+                            <FontAwesomeIcon className="agendamentoIcones" icon={faLocationDot} />
+                            <SecaoAgendamentoParagrafo>123 Sunnyvale Rd, San Jose California, United States</SecaoAgendamentoParagrafo>
+                        </SecaoAgendamentoCaixaParagrafoDentro>
+                        <SecaoAgendamentoCaixaParagrafoDentro>
+                            <FontAwesomeIcon className="agendamentoIcones" icon={faClock} />
+                            <SecaoAgendamentoParagrafo>Seg-Sex 10 am-5pm, sáb 1 pm-5pm</SecaoAgendamentoParagrafo>
+                        </SecaoAgendamentoCaixaParagrafoDentro>
+                        <SecaoAgendamentoCaixaParagrafoDentro>
+                            <FontAwesomeIcon className="agendamentoIcones" icon={faMobileScreen} />
+                            <SecaoAgendamentoParagrafo>415-111-2233</SecaoAgendamentoParagrafo>
+                        </SecaoAgendamentoCaixaParagrafoDentro>
+                    </SecaoAgendamentoCaixaParagrafo>
+                </SecaoAgendamento>
+            </SecaoAtendimento>
             {/* FIM SECAO HORARIOS ATENDIMENTO*/}
             <Rodape></Rodape>
         </>
