@@ -9,7 +9,7 @@
 
 <h2>🚀 Tecnologias Utilizadas</h2>
 <ul>
-  <li><b>JavaScript</b> - React.js</li>
+  <li><b>JavaScript</b> - React.js - react-router-dom - styled-components</li>
   <li><b>swiper</b></li>
 </ul>
 
